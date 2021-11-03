@@ -1,0 +1,30 @@
+.container-sign-up {
+  background-image: radial-gradient(
+    ellipse at center,
+    #0264d6 1%,
+    #1c2b5a 100%
+  );
+  height: calc(100vh);
+  width: 100%;
+}
+.form-sign-up {
+  display: flex;
+  justify-content: center;
+}
+
+.border-form {
+  border-right: 1px solid black;
+}
+
+.btn-sign-in {
+  vertical-align: bottom;
+  float: right;
+}
+.input-group-prepend span {
+  border-radius: 0 5px 5px 0 !important;
+}
+
+.span-icon {
+  position: absolute;
+  padding-bottom: 10px;
+}

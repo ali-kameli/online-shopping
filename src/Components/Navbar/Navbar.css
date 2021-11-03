@@ -1,0 +1,79 @@
+.container-fluid {
+  background-color: rgb(248, 248, 248) !important;
+  justify-content: space-between;
+}
+.navbar-logo {
+  color: rgb(255, 52, 52) !important;
+  position: relative;
+  width: 100%;
+  min-height: 1px;
+  padding-left: 0;
+  -ms-flex: 0 0 110px;
+  -webkit-box-flex: 0;
+  flex: 0 0 110px;
+  /* max-width: 110px; */
+  max-height: 100%;
+  padding-right: 0;
+  margin-left: 24px;
+  margin-right: 8px;
+  font-size: 2rem;
+  font-weight: 600;
+}
+input {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  padding: 5px 15px;
+  border-radius: 10px 0 0 10px;
+  position: relative;
+}
+input:hover {
+  background-color: whitesmoke;
+}
+.navbar-icon {
+  border-radius: 0 7px 7px 0 !important;
+  position: absolute;
+  height: -webkit-fill-available;
+}
+nav {
+  justify-content: space-between !important;
+}
+.ul-login {
+  display: flex;
+  /* width: 100%;
+  justify-content: center; */
+}
+.navbar-collapse {
+  justify-content: center;
+}
+li {
+  list-style: none;
+}
+.fa-shopping-cart {
+  color: #949494;
+  font-size: x-large;
+  margin-right: 1rem;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.fa-shopping-cart:hover {
+  color: rgb(255, 81, 81);
+}
+.span-counter {
+  margin: 0 0 0 -17px;
+}
+.fa-user-navbar {
+  color: darkgray;
+  font-size: 2rem;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.sign-in-navbar a {
+  padding-bottom: 0 !important;
+  padding-top: 0 !important;
+  padding-left: 2px;
+  font-size: small;
+  color: black;
+}
+.navbar-toggler {
+  background-color: darkgray;
+}

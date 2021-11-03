@@ -1,0 +1,16 @@
+.store-product {
+  text-align: center;
+  text-align: -webkit-center;
+}
+.container-store-product {
+  background: #282828;
+  min-height: 85vh !important;
+  text-align: center;
+}
+
+.container-store-product h2{
+  text-align: center;
+  border-bottom: 3px solid cadetblue;
+  display: inline;
+  
+}

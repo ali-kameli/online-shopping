@@ -1,0 +1,5 @@
+{
+    "backendlessapi": "https://xxxx.backendless.app",
+    "reqres":"https://reqres.in",
+    "localapi":"http://localhost:3000"
+}
