@@ -1,5 +1,6 @@
 {
     "backendlessapi": "https://xxxx.backendless.app",
-    "reqres":"https://reqres.in",
-    "localapi":"http://localhost:3000"
+    "reqres": "https://reqres.in",
+    "localapi": "http://localhost:3000",
+    "real":"https://api.freerealapi.com/auth/register"
 }

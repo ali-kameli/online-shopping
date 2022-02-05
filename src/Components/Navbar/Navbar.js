@@ -2,10 +2,11 @@ import React, { useContext } from "react";
 import { NavLink, Link } from "react-router-dom";
 import { CartContext } from "./../context/CartContextProvider";
 import "./Navbar.css";
-import digi from "../assets/digistore.png"
+import digi from "../assets/digistore.png";
+import { useSelector } from "react-redux";
 
 const Navbar = () => {
-  const { state } = useContext(CartContext);
+  const state = useSelector((state) => state.cartState);
 
   return (
     <div class="container-fluid p-0 sticky-top">
@@ -24,7 +25,7 @@ const Navbar = () => {
               <span class="navbar-toggler-icon "></span>
             </button>
             <Link class="navbar-brand navbar-logo col-3" to="/products">
-             <img src={digi} alt="digi" className="w-100"/>
+              <img src={digi} alt="digi" className="w-100" />
             </Link>
 
             <div class="collapse navbar-collapse " id="navbarNav">
@@ -33,7 +34,12 @@ const Navbar = () => {
                   <div>
                     <form className="form-contorol mt-2 ">
                       <div class="input-group">
-                        <input type="text" size="70" className="w-75" placeholder="Search" />
+                        <input
+                          type="text"
+                          size="70"
+                          className="w-75"
+                          placeholder="Search"
+                        />
                         <div class="input-group-prepend">
                           <span class="input-group-text navbar-icon">
                             <i className="fa fa-search"></i>
@@ -51,10 +57,18 @@ const Navbar = () => {
                 <i className="fa fa-user fa-user-navbar "></i>
               </span>
               <div className="sign-in-navbar">
-                <NavLink activeStyle={{color:"limegreen"}} class="nav-link" to="/signin">
+                <NavLink
+                  activeStyle={{ color: "limegreen" }}
+                  class="nav-link"
+                  to="/signin"
+                >
                   Sign in
                 </NavLink>
-                <NavLink activeStyle={{color:"limegreen"}} class="nav-link" to="/signup">
+                <NavLink
+                  activeStyle={{ color: "limegreen" }}
+                  class="nav-link"
+                  to="/register"
+                >
                   Sign up
                 </NavLink>
               </div>

@@ -4,9 +4,8 @@ import { isInCart, quantityCount, shorten } from "./../helpers/functions";
 import { CartContext } from "./../context/CartContextProvider";
 import "./product.css";
 
-
 const Product = ({ productData }) => {
-  const { state, dispatch } = useContext(CartContext);
+  // const { state, dispatch } = useContext(CartContext);
 
   return (
     <div className="product-cart my-3 pt-4">
@@ -17,7 +16,7 @@ const Product = ({ productData }) => {
         <input type="button" className="btn detail-product" value="Detail" />
       </Link>
 
-      {quantityCount(state, productData.id) > 1 && (
+      {/* {quantityCount(state, productData.id) > 1 && (
         <button
           onClick={() => dispatch({ type: "DECREASE", payload: productData })}
           className="btn-cart-product"
@@ -54,7 +53,7 @@ const Product = ({ productData }) => {
         >
           Add to Cart
         </button>
-      )}
+      )} */}
     </div>
   );
 };

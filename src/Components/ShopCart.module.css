@@ -1,10 +1,9 @@
-.container-shopcart {
+.container {
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
   margin: 150px 175px 50px;
   transition: all 0.2s ease;
-  /* min-height: 100vh !important; */
 }
 
 .cartContainer {
@@ -12,7 +11,7 @@
 }
 
 .payments {
-  width: 100%;
+  width: 27%;
   background: #fff;
   border: 1px solid silver;
   border-radius: 5px;
@@ -22,7 +21,6 @@
 .payments p {
   color: rgb(61, 61, 61);
   margin: 20px 20px 10px;
-  text-align: end;
 }
 
 .payments p span {
@@ -59,7 +57,7 @@
 
 .clear {
   cursor: pointer;
-  color: #f80303;
+  color: #34a853;
   background: none;
   border: none;
   transition: all 0.2s ease;
@@ -67,7 +65,7 @@
 }
 
 .clear:hover {
-  color: #b40606;
+  color: #167d32;
 }
 
 .complete h3 {
@@ -86,7 +84,7 @@
   text-align: center;
   cursor: pointer;
   transition: all 0.2s ease;
-  width: 110px;
+  width: 90px;
   font-weight: bold;
   line-height: 30px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 12px -2px,
@@ -97,18 +95,15 @@
 .complete a:hover {
   background-color: #08499d;
 }
-.complete-div {
-  justify-content: center;
-}
 
 @media (max-width: 1200px) {
-  .container-shopcart {
+  .container {
     margin: 120px 80px 50px;
   }
 }
 
 @media (max-width: 1050px) {
-  .container-shopcart {
+  .container {
     flex-direction: column-reverse;
     margin: 120px 80px 50px;
     align-items: center;
@@ -124,13 +119,13 @@
 }
 
 @media (max-width: 768px) {
-  .container-shopcart {
+  .container {
     margin: 120px 40px 50px;
   }
 }
 
 @media (max-width: 555px) {
-  .container-shopcart {
+  .container {
     margin: 120px 20px 50px;
   }
 }
